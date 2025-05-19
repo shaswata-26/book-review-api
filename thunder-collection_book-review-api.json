@@ -1,0 +1,173 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "book-review-api",
+    "collectionId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+    "dateExported": "2025-05-19T19:10:24.829Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ec0b8a65-16f0-4363-80c9-f02c4a98387b",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/signup",
+            "url": "http://localhost:5000/api/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-05-19T18:01:47.683Z",
+            "modified": "2025-05-19T19:10:12.918Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"username\": \"Shaswata\",\r\n  \"email\": \"sas@example.com\",\r\n  \"password\": \"mypassword123\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "507f5119-6acb-4665-aa5b-2803c99eec70",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/login",
+            "url": "http://localhost:5000/api/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-05-19T18:02:09.008Z",
+            "modified": "2025-05-19T18:19:25.378Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"mypassword123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7a69ea7a-400a-43f7-b41e-6b36ef2cf574",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/books",
+            "url": "http://localhost:5000/api/books",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-05-19T18:02:57.028Z",
+            "modified": "2025-05-19T18:24:59.926Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"Atomic Habits\",\r\n  \"author\": \"James Clear\",\r\n  \"genre\": \"Self-help\"\r\n}\r\n\r\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmI3NDU4YzgyOTBiMGNhODQyYzI1OCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsImlhdCI6MTc0NzY3ODc2NX0.VH4XsLGAz9MIOuHEki3TJOAhszur0gdNEB8W0r3EaTA"
+            }
+        },
+        {
+            "_id": "6fc97a96-f46f-4be5-831d-c88b973a75a6",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/books",
+            "url": "http://localhost:5000/api/books",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-05-19T18:03:18.624Z",
+            "modified": "2025-05-19T18:20:39.215Z",
+            "headers": []
+        },
+        {
+            "_id": "8639604d-94ff-4c89-96bc-f2cfb7175eb9",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/search",
+            "url": "http://localhost:5000/api/search",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-05-19T18:03:59.813Z",
+            "modified": "2025-05-19T18:23:54.594Z",
+            "headers": []
+        },
+        {
+            "_id": "04c4699e-152b-4984-bfb9-a2bc46fc4ab9",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/books/:id",
+            "url": "http://localhost:5000/api/books/682b7645c8290b0ca842c25c",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-05-19T18:04:23.964Z",
+            "modified": "2025-05-19T18:48:50.844Z",
+            "headers": []
+        },
+        {
+            "_id": "1baf32fc-1eaf-41c5-8048-b195c12ed1d5",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/books/:id/reviews",
+            "url": "http://localhost:5000/api/books/682b7645c8290b0ca842c25c/reviews",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2025-05-19T18:05:44.379Z",
+            "modified": "2025-05-19T18:53:10.714Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"rating\": 5,\r\n  \"comment\": \"Absolutely inspiring book!\"\r\n}\r\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmI3NDU4YzgyOTBiMGNhODQyYzI1OCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsImlhdCI6MTc0NzY3ODc2NX0.VH4XsLGAz9MIOuHEki3TJOAhszur0gdNEB8W0r3EaTA"
+            }
+        },
+        {
+            "_id": "c7dd1b2b-18ec-4ff2-8d94-a46a7ce740f3",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/reviews/:id",
+            "url": "http://localhost:5000/api/reviews/682b7e16c8290b0ca842c267",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2025-05-19T18:06:38.816Z",
+            "modified": "2025-05-19T18:55:43.825Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"rating\": 7,\r\n  \"comment\": \"Absolutely inspiring book!\"\r\n}\r\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmI3NDU4YzgyOTBiMGNhODQyYzI1OCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsImlhdCI6MTc0NzY3ODc2NX0.VH4XsLGAz9MIOuHEki3TJOAhszur0gdNEB8W0r3EaTA"
+            }
+        },
+        {
+            "_id": "5c6130a2-c1f1-4334-8897-50172ff584ab",
+            "colId": "69c668bb-ca1f-495e-a415-e24963c06c17",
+            "containerId": "",
+            "name": "http://localhost:5000/reviews/:id",
+            "url": "http://localhost:5000/api/reviews/682b7e16c8290b0ca842c267",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2025-05-19T18:07:18.083Z",
+            "modified": "2025-05-19T18:56:27.318Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmI3NDU4YzgyOTBiMGNhODQyYzI1OCIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSIsImlhdCI6MTc0NzY3ODc2NX0.VH4XsLGAz9MIOuHEki3TJOAhszur0gdNEB8W0r3EaTA"
+            }
+        }
+    ],
+    "settings": {
+        "runOptions": {
+            "delay": 0,
+            "iterations": 1,
+            "stopOnFail": true,
+            "dataFilePath": ""
+        }
+    },
+    "ref": "JH3GJvJnZvsK2sPUOJWWeHqBT8f--LcwJy9y8WJ3FUfVcmUG2fK_RzWRe1PLWpeeRLExf-S7j5ctHA_09OyGkQ"
+}
