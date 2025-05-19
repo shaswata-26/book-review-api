@@ -125,3 +125,32 @@ curl -X DELETE http://localhost:5000/api/reviews/<REVIEW_ID> \
 -H "Authorization: Bearer <TOKEN>"
 
 
+🗃️ Schema Design
+🧑 Users
+_id (ObjectId): Unique identifier (primary key)
+username (String): Unique username
+email (String): Unique email address
+password (String): Hashed password
+created_at (Date): Timestamp of account creation
+
+📚 Books
+_id (ObjectId): Unique identifier (primary key)
+title (String): Title of the book
+author (String): Author of the book
+genre (String): Book genre
+reviews (Array of ObjectIds): References to Review documents
+created_at (Date): Timestamp of book entry creation
+
+📝 Reviews
+_id (ObjectId): Unique identifier (primary key)
+user (ObjectId): Reference to the User who wrote the review (foreign key)
+book (ObjectId): Reference to the reviewed Book (foreign key)
+rating (Number): Rating value (e.g., 1–5)
+comment (String): Review content
+created_at (Date): Timestamp of review
+
+🔗 Relationships
+A User can write multiple Reviews
+A Book can have multiple Reviews
+A Review belongs to one User and one Book
+
